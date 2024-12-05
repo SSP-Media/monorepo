@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  initworkspace:
+    desc: (Do not run) Init the go workspace
+    cmds:
+      - go work init
+
+  updateworkspace:
+    desc: Update the go workspace for this project
+    cmds:
+      - go work use -r .
